@@ -1,0 +1,21 @@
+"Games"
+{
+	/* Team Fortress 2 */
+	"tf"
+	{
+		"Offsets"
+		{
+			"CTFPlayer::GiveAmmo"	//(int, int, bool)
+			{
+				"windows"	"253"
+				"linux"		"254"
+			}
+			
+			"CTFPlayer::RemoveAmmo" //(int, int)
+			{
+				"windows"	"255"
+				"linux"		"255"
+			}
+		}
+	}
+}
