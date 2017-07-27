@@ -5,15 +5,15 @@
 //SDKHooks
 Handle g_hGiveAmmo;
 
-enum
+enum 
 {
-	TF_AMMO_DUMMY = 0,	// Dummy index to make the CAmmoDef indices correct for the other ammo types.
+	TF_AMMO_DUMMY = 0,
 	TF_AMMO_PRIMARY,
 	TF_AMMO_SECONDARY,
 	TF_AMMO_METAL,
 	TF_AMMO_GRENADES1,
 	TF_AMMO_GRENADES2,
-	TF_AMMO_COUNT
+	TF_AMMO_GRENADES3,
 };
 
 public Plugin myinfo = 
@@ -49,6 +49,7 @@ public Action OnPlayerRunCmd(int client, int &iButtons, int &iImpulse, float fVe
 	SDKCall(g_hGiveAmmo, client, 100, TF_AMMO_METAL,     true);
 	SDKCall(g_hGiveAmmo, client, 100, TF_AMMO_GRENADES1, true);
 	SDKCall(g_hGiveAmmo, client, 100, TF_AMMO_GRENADES2, true);
+	SDKCall(g_hGiveAmmo, client, 100, TF_AMMO_GRENADES3, true);
 	
 	return Plugin_Continue;
 }
