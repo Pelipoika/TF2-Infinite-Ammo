@@ -7,14 +7,14 @@
 		{
 			"CTFPlayer::GiveAmmo"	//(int, int, bool)
 			{
-				"windows"	"254"
-				"linux"		"255"
+				"windows"	"255"
+				"linux"		"256"
 			}
 			
 			"CTFPlayer::RemoveAmmo" //(int, int)
 			{
-				"windows"	"256"
-				"linux"		"256"
+				"windows"	"257"
+				"linux"		"257"
 			}
 		}
 	}
